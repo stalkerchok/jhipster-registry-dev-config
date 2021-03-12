@@ -1,0 +1,23 @@
+spring:
+  ldap:
+    embedded:
+      base-dn: dc=springframework,dc=org
+      credential:
+        username: uid=admin1
+        password: admin1
+      ldif: classpath:test-server.ldif
+      port: 12345
+      validation:
+        enabled: false
+auth:
+  endpoint: ldap://localhost:12345
+  port: 12345
+  userIdAttribute: uid
+  userIdOccurrence: 0
+  baseDn: dc=springframework,dc=org
+  groupSearchBase: ou=groups,dc=springframework,dc=org
+  groupSearchFilter: (objectclass=groupOfUniqueNames)
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: uaa-dev
