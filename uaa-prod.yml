@@ -20,4 +20,4 @@ auth:
 eureka:
   instance:
     prefer-ip-address: false
-    hostname: uaa-dev
+    hostname: uaa
