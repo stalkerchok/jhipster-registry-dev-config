@@ -1,4 +1,4 @@
 eureka:
   instance:
     prefer-ip-address: false
-    hostname: ms-masterdata
+    hostname: dev-ms-masterdata.reunico.com
